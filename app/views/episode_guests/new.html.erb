@@ -1,0 +1,21 @@
+
+<h1>Welcome User</h1>
+
+<h3>Fill out the form below to book a new guest</h3>
+
+
+<%= form_for @episodeguest do |f| %>
+  <%= f.label :rating %><br>
+  <%= f.text_field :rating %><br>
+  <h4>Please enter the name of the guest you are looking for:</h4>
+  <%= f.label :guest %><br>
+  <%= f.text_field :guest %><br>
+
+  <h4>Please enter the number of the epidode you would like to select:</h4>
+  <%= f.label :episode %><br>
+  <%= f.text_field :episode %><br>
+
+  <br>
+  <br>
+  <%= f.submit %>
+<% end %>
